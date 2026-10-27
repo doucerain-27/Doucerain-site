@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Doucerain Désinsectisation & Dératisation intervient dans l’Eure et en Normandie contre les nuisibles. Contactez-nous pour demander un devis.">
+  <meta name="theme-color" content="#08794f">
+  <title>Doucerain | Désinsectisation & Dératisation en Normandie</title>
+  <style>
+    :root{--green:#08794f;--green2:#12a466;--dark:#14252d;--muted:#52646b;--pale:#eef8f2;--white:#fff}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--dark);line-height:1.6;background:#fff}
+    a{color:inherit}
+    .wrap{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:5;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid #e5ece8}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-weight:850;line-height:1.15}
+    .logo{display:grid;place-items:center;width:44px;height:44px;background:var(--green);color:#fff;border-radius:14px;font-size:23px}
+    .brand small{display:block;font-size:11px;letter-spacing:.08em;color:var(--muted);font-weight:650;margin-top:4px}
+    nav{display:flex;gap:22px;align-items:center}
+    nav a{text-decoration:none;font-size:14px;font-weight:650}
+    nav a:hover{color:var(--green)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:var(--green);color:#fff;border:0;border-radius:999px;padding:13px 20px;text-decoration:none;font-weight:750;cursor:pointer;box-shadow:0 8px 20px #08794f20}
+    .btn:hover{background:#066641}
+    .btn.light{background:#fff;color:var(--green)}
+    .hero{position:relative;overflow:hidden;background:linear-gradient(115deg,#102c2b 0%,#173c37 55%,#0b7250 100%);color:#fff}
+    .hero:after{content:"";position:absolute;right:-110px;top:-150px;width:520px;height:520px;border:1px solid #ffffff24;border-radius:50%;box-shadow:0 0 0 50px #ffffff08,0 0 0 100px #ffffff05}
+    .hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:42px;padding:76px 0 82px}
+    .eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.16em;font-weight:800;color:#8be1b4}
+    h1{font-size:clamp(36px,5vw,62px);line-height:1.04;letter-spacing:-.04em;margin:15px 0 20px}
+    h1 span{color:#70e0a4}
+    .hero p{font-size:18px;color:#e2f0e9;max-width:580px}
+    .ticks{display:flex;flex-wrap:wrap;gap:10px 18px;margin:26px 0 30px;color:#effbf4;font-size:14px}
+    .ticks span:before{content:"✓";display:inline-grid;place-items:center;background:#28b878;color:#fff;border-radius:50%;width:20px;height:20px;margin-right:8px;font-weight:900}
+    .hero-art{min-height:330px;border:1px solid #ffffff25;border-radius:28px;background:linear-gradient(145deg,#ffffff18,#ffffff05);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:28px;box-shadow:inset 0 1px #ffffff20}
+    .hero-icon{font-size:92px;line-height:1.1;filter:drop-shadow(0 10px 18px #0003)}
+    .hero-art strong{font-size:22px;margin-top:18px}
+    .hero-art p{font-size:14px;max-width:280px;margin:8px 0 0}
+    section{padding:72px 0}
+    .section-head{text-align:center;max-width:680px;margin:0 auto 36px}
+    .section-head h2{font-size:clamp(28px,3vw,40px);letter-spacing:-.03em;line-height:1.15;margin:0 0 12px}
+    .section-head p{margin:0;color:var(--muted)}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{padding:25px;border:1px solid #e1eae5;border-radius:18px;background:#fff;box-shadow:0 8px 25px #193d2c08}
+    .card-icon{display:grid;place-items:center;width:54px;height:54px;border-radius:16px;background:var(--pale);font-size:27px;margin-bottom:18px}
+    .card h3{margin:0 0 8px;font-size:20px}
+    .card p{margin:0;color:var(--muted);font-size:15px}
+    .band{background:#f4f8f5}
+    .why-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:42px;align-items:center}
+    .why-panel{background:var(--green);color:#fff;border-radius:24px;padding:34px}
+    .why-panel .big{font-size:54px;line-height:1}
+    .why-panel h3{font-size:25px;line-height:1.2;margin:18px 0 12px}
+    .why-panel p{color:#e0f5e9;margin:0}
+    .benefits{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+    .benefit{display:flex;gap:14px}
+    .benefit-icon{flex:0 0 42px;height:42px;display:grid;place-items:center;background:#dff4e7;border-radius:13px;font-size:21px}
+    .benefit h3{font-size:17px;margin:0 0 5px}
+    .benefit p{font-size:14px;color:var(--muted);margin:0}
+    .process{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;counter-reset:step}
+    .step{border-top:3px solid var(--green2);padding:22px 20px;background:#f9fbfa;border-radius:0 0 16px 16px}
+    .step b{color:var(--green);font-size:13px;letter-spacing:.1em;text-transform:uppercase}
+    .step h3{margin:7px 0}
+    .step p{margin:0;color:var(--muted);font-size:14px}
+    .contact{background:linear-gradient(130deg,#102a2b,#164c3a);color:#fff}
+    .contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:45px;align-items:start}
+    .contact h2{font-size:clamp(30px,4vw,44px);line-height:1.1;margin:0 0 15px}
+    .contact-intro{color:#d6e9df}
+    .contact-info{margin-top:28px;display:grid;gap:14px}
+    .contact-info a,.contact-info div{display:flex;gap:12px;align-items:center;text-decoration:none}
+    form{background:#fff;color:var(--dark);padding:28px;border-radius:20px}
+    form h3{font-size:22px;margin:0 0 18px}
+    label{display:block;font-size:13px;font-weight:750;margin:13px 0 6px}
+    input,select,textarea{width:100%;border:1px solid #d8e3dd;border-radius:10px;padding:12px 13px;font:inherit;color:var(--dark);background:#fff}
+    textarea{min-height:105px;resize:vertical}
+    input:focus,select:focus,textarea:focus{outline:3px solid #12a46630;border-color:var(--green2)}
+    .form-note{font-size:12px;color:var(--muted);margin:12px 0 0}
+    footer{background:#0c1c22;color:#d7e4de;padding:26px 0}
+    .foot{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;font-size:13px}
+    .foot a{color:#fff}
+    .smallprint{font-size:11px;color:#aabbb3;margin-top:10px}
+    .mobile-call{display:none}
+    @media(max-width:800px){
+      nav{display:none}.hero-grid,.why-grid,.contact-grid{grid-template-columns:1fr}
+      .hero-grid{padding:55px 0;gap:26px}.hero-art{min-height:220px}.hero-icon{font-size:68px}
+      section{padding:56px 0}.cards{grid-template-columns:1fr 1fr}.process{grid-template-columns:1fr}
+      .why-grid{gap:25px}.contact-grid{gap:28px}
+    }
+    @media(max-width:520px){
+      .nav{padding:11px 0}.brand{font-size:14px}.logo{width:39px;height:39px}
+      .nav>.btn{padding:10px 12px;font-size:12px}
+      .hero-grid{padding:45px 0}.hero p{font-size:16px}.ticks{display:grid}
+      .cards,.benefits{grid-template-columns:1fr}.card{padding:22px}
+      form{padding:22px}.foot{align-items:flex-start;flex-direction:column}
+      .mobile-call{display:block;position:fixed;bottom:12px;left:12px;right:12px;z-index:8;text-align:center;box-shadow:0 8px 28px #0004}
+      footer{padding-bottom:82px}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#accueil" aria-label="Doucerain, accueil">
+      <span class="logo">✦</span>
+      <span>DOUCERAIN<small>DÉSINSECTISATION & DÉRATISATION</small></span>
+    </a>
+    <nav aria-label="Navigation principale">
+      <a href="#services">Services</a><a href="#engagements">Nos engagements</a><a href="#zone">Zone d’intervention</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="btn" href="tel:0646407313">☎ 06 46 40 73 13</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="accueil">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">Votre tranquillité, notre priorité</div>
+        <h1>Désinsectisation <span>& dératisation</span></h1>
+        <p>Des solutions adaptées pour vous aider à retrouver un environnement propre, sain et serein, à la maison comme dans vos locaux professionnels.</p>
+        <div class="ticks"><span>Particuliers et professionnels</span><span>Évaluation selon votre situation</span><span>Intervention dans l’Eure et en Normandie</span></div>
+        <a class="btn" href="#contact">Demander un devis gratuit <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="hero-art" aria-label="Illustration de la protection contre les nuisibles">
+        <div class="hero-icon" aria-hidden="true">🛡️</div>
+        <strong>Un espace plus serein</strong>
+        <p>Une prise en charge adaptée à votre problème de nuisibles, avec des conseils de prévention.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head"><h2>Nos services anti-nuisibles</h2><p>Chaque situation est différente : la solution est définie selon le nuisible identifié, les lieux et le niveau d’infestation.</p></div>
+      <div class="cards">
+        <article class="card"><div class="card-icon" aria-hidden="true">🪳</div><h3>Désinsectisation</h3><p>Prise en charge des insectes nuisibles : cafards, blattes, fourmis, puces et autres insectes, selon le diagnostic.</p></article>
+        <article class="card"><div class="card-icon" aria-hidden="true">🐀</div><h3>Dératisation</h3><p>Solutions contre les rats et les souris, avec conseils pour limiter les accès et prévenir leur retour.</p></article>
+        <article class="card"><div class="card-icon" aria-hidden="true">🐝</div><h3>Guêpes et frelons</h3><p>Évaluation de la situation et prise en charge des nids lorsque l’intervention est adaptée et sécurisée.</p></article>
+        <article class="card"><div class="card-icon" aria-hidden="true">🛏️</div><h3>Punaises de lit</h3><p>Conseils et solutions adaptées pour traiter le problème et réduire les risques de propagation.</p></article>
+        <article class="card"><div class="card-icon" aria-hidden="true">🏠</div><h3>Prévention</h3><p>Recommandations pour limiter les sources de nourriture, les points d’entrée et les conditions favorables aux nuisibles.</p></article>
+        <article class="card"><div class="card-icon" aria-hidden="true">🏢</div><h3>Locaux professionnels</h3><p>Solutions étudiées pour les commerces, bureaux, logements et autres locaux, selon les besoins.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="engagements">
+    <div class="wrap why-grid">
+      <div class="why-panel"><div class="big" aria-hidden="true">✓</div><h3>Un accompagnement clair, de la demande au conseil</h3><p>Expliquez-nous votre situation : nous pourrons échanger sur le nuisible concerné et les prochaines étapes possibles.</p></div>
+      <div>
+        <div class="section-head" style="text-align:left;margin:0 0 25px"><h2>Pourquoi contacter Doucerain ?</h2><p>Un contact simple pour vous orienter vers une réponse adaptée.</p></div>
+        <div class="benefits">
+          <div class="benefit"><div class="benefit-icon" aria-hidden="true">💬</div><div><h3>Écoute et conseils</h3><p>Une première prise d’informations pour comprendre le problème rencontré.</p></div></div>
+          <div class="benefit"><div class="benefit-icon" aria-hidden="true">🎯</div><div><h3>Solution adaptée</h3><p>La méthode dépend du type de nuisible et des caractéristiques des lieux.</p></div></div>
+          <div class="benefit"><div class="benefit-icon" aria-hidden="true">🏡</div><div><h3>Particuliers et pros</h3><p>Des demandes pour votre habitation ou vos locaux professionnels.</p></div></div>
+          <div class="benefit"><div class="benefit-icon" aria-hidden="true">📍</div><div><h3>Zone régionale</h3><p>Demandes d’intervention dans l’Eure et en Normandie.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="zone">
+    <div class="wrap">
+      <div class="section-head"><h2>Comment se déroule une demande ?</h2><p>Un parcours simple pour nous expliquer votre besoin.</p></div>
+      <div class="process">
+        <div class="step"><b>Étape 01</b><h3>Vous nous contactez</h3><p>Appelez-nous ou envoyez votre demande en précisant le nuisible et la commune concernée.</p></div>
+        <div class="step"><b>Étape 02</b><h3>Nous échangeons</h3><p>Les informations utiles permettent d’étudier la situation et les solutions envisageables.</p></div>
+        <div class="step"><b>Étape 03</b><h3>Vous recevez une réponse</h3><p>Les modalités et le tarif sont à confirmer selon le problème et les conditions d’intervention.</p></div>
+      </div>
+      <div style="text-align:center;margin-top:30px;color:var(--muted)"><strong style="color:var(--dark)">Zone d’intervention :</strong> Eure et Normandie — contactez-nous pour vérifier la disponibilité dans votre commune.</div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <div class="eyebrow">Parlons de votre problème</div>
+        <h2>Besoin d’une intervention contre les nuisibles ?</h2>
+        <p class="contact-intro">Décrivez votre situation pour demander un devis. Pour une réponse plus précise, indiquez le type de nuisible, la commune et le lieu concerné.</p>
+        <div class="contact-info">
+          <a href="tel:0646407313"><span aria-hidden="true">☎</span><span><strong>Téléphone</strong><br>06 46 40 73 13</span></a>
+          <div><span aria-hidden="true">📍</span><span><strong>Secteur</strong><br>Eure et Normandie</span></div>
+          <div><span aria-hidden="true">✉</span><span><strong>Demande de devis</strong><br>Formulaire ci-contre, ouverture de votre application e-mail</span></div>
+        </div>
+      </div>
+      <form id="quote-form">
+        <h3>Demande de devis</h3>
+        <label for="name">Votre nom *</label><input id="name" name="name" autocomplete="name" required placeholder="Nom et prénom">
+        <label for="phone">Votre téléphone</label><input id="phone" name="phone" autocomplete="tel" type="tel" placeholder="Pour vous recontacter">
+        <label for="town">Commune d’intervention *</label><input id="town" name="town" required placeholder="Ex. : Évreux">
+        <label for="service">Type de nuisible *</label>
+        <select id="service" name="service" required>
+          <option value="">Sélectionnez une option</option><option>Dératisation (rats, souris)</option><option>Désinsectisation (cafards, fourmis, puces…)</option><option>Punaises de lit</option><option>Guêpes ou frelons</option><option>Prévention / locaux professionnels</option><option>Autre nuisible</option>
+        </select>
+        <label for="message">Décrivez votre besoin</label><textarea id="message" name="message" placeholder="Où avez-vous constaté le problème ? Depuis quand ?"></textarea>
+        <button class="btn" style="width:100%;margin-top:18px" type="submit">Préparer ma demande par e-mail →</button>
+        <p class="form-note">Ce formulaire prépare un e-mail dans votre application de messagerie ; il ne transmet pas automatiquement les données. Aucun e-mail professionnel n’ayant été fourni, veuillez ajouter votre adresse e-mail dans le code avant la mise en ligne (voir le fichier LISEZ-MOI).</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot"><div><strong>DOUCERAIN — Désinsectisation & Dératisation</strong><br><span>Eure et Normandie · <a href="tel:0646407313">06 46 40 73 13</a></span></div><div><a href="#accueil">Retour en haut ↑</a></div></div>
+    <div class="smallprint">Les prestations, disponibilités, tarifs et délais sont à confirmer avant publication. Complétez les mentions légales et la politique de confidentialité avec les informations exactes de votre entreprise avant de diffuser le site.</div>
+  </div>
+</footer>
+<a class="btn mobile-call" href="tel:0646407313">☎ Appeler le 06 46 40 73 13</a>
+<script>
+  document.getElementById('quote-form').addEventListener('submit', function(e){
+    e.preventDefault();
+    /* Remplacez l'adresse ci-dessous par l'adresse e-mail professionnelle de l'entreprise. */
+    const email = 'VOTRE-EMAIL-ICI';
+    if(email === 'VOTRE-EMAIL-ICI'){
+      alert("Le formulaire est prêt, mais l’adresse e-mail de l’entreprise doit être ajoutée avant utilisation. Consultez le fichier LISEZ-MOI.");
+      return;
+    }
+    const f = new FormData(this);
+    const subject = encodeURIComponent("Demande de devis - " + f.get('service') + " - " + f.get('town'));
+    const body = encodeURIComponent(
+      "Nom : " + f.get('name') + "\nTéléphone : " + f.get('phone') +
+      "\nCommune : " + f.get('town') + "\nNuisible : " + f.get('service') +
+      "\nDescription : " + f.get('message')
+    );
+    window.location.href = "mailto:" + email + "?subject=" + subject + "&body=" + body;
+  });
+</script>
+</body>
+</html>
